@@ -1,0 +1,31 @@
+<div id="treeViewContainer"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food & Review App Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src=https://graphicsfamily.com/wp-content/uploads/edd/2021/06/Editable-Photoshop-Food-Logo-Design-PNG-Transparent-1536x1536.png alt="App Logo" class="app-logo">
+        <form id="loginForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" onclick="signIn()">Login</button>
+            <button type="button" onclick="signUp()">Sign Up</button>
+        </form>
+    </div>
+
+    <div id="popup" class="popup">
+        <span class="popup-message" id="popupMessage"></span>
+    </div>
+
+    <script src="scriptt.js"></script>
+</body>
+</html>
